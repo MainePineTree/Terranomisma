@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<head>
+  <title> Terranomisma </title>
+  <link rel = "icon" type = "image/x-icon" href = "/images/favicon.ico"> <h1 style = "font-family:Times New Roman; font-size:300%; border:3px Solid Green" title="Made by Teo Rivera">
+
+<meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+<style>
+
+div.gallery {
+  margin: 3px;
+  border: 2px dotted seagreen;
+  float: left;
+}
+
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+::selection {color:green; background: black;}
+
+h1 {background:green url("https://plus.unsplash.com/premium_photo-1675342786681-e33a19414cfd?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bGVhdmVzfGVufDB8fDB8fHww") fixed; opacity = 0.7; text-shadow: 1px 1px 5px black; position: sticky; top:0px; color:green;}
+
+#head {background:green url("https://plus.unsplash.com/premium_photo-1675342786681-e33a19414cfd?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bGVhdmVzfGVufDB8fDB8fHww") fixed; opacity = 0.7; text-shadow: 1px 1px 5px black; position: sticky; top:0px; color:green; text-decoration-line:none;}
+
+
+h1:hover {background:green url("https://plus.unsplash.com/premium_photo-1675342786681-e33a19414cfd?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bGVhdmVzfGVufDB8fDB8fHww") fixed; opacity = 0.7; text-shadow: 1px 1px 5px green; position: sticky; top:0px; color:white;}
+
+#head:hover {background:green url("https://plus.unsplash.com/premium_photo-1675342786681-e33a19414cfd?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bGVhdmVzfGVufDB8fDB8fHww") fixed; opacity = 0.7; text-shadow: 1px 1px 5px green; position: sticky; top:0px; color:white; text-decoration-line:underline; text-decoration-style: dotted;}
+
+body {font-family: Helvetica; background: url("https://plus.unsplash.com/premium_photo-1663962158789-0ab624c4f17d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGVhdmVzfGVufDB8fDB8fHww") fixed; color:LightGoldenRodYellow; text-shadow: 1px 1px 2px green}
+
+p::first-line {color: white; font-size:1.5em;}
+
+#fix {font-family: Tahoma; border-left: solid 5px mediumturquoise; background-color: lightskyblue; border-radius: 5px; margin: auto; text-shadow: 1px 1px 3px black; border-top: solid 5px dodgerblue;}
+
+
+h2 {text-shadow: 1px 1px 5px black;}
+
+
+a:link {color:LightGoldenRodYellow;}
+
+
+a {cursor:help}
+
+a:visited {color: Khaki;}
+
+a:hover
+{color:GoldenRod; font-weight: bold}
+
+a:active
+{color:Gold;}
+
+#postintro {margin: 0px 0px 0px 0px; background:green url("https://images.unsplash.com/photo-1618419164408-8fe110b99646?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")fixed; border-left: 5px solid mediumturquoise; border-right: 5px solid lightskyblue; border-bottom: 5px solid #64d0e1; border-radius: 8px;}
+
+#cornerstone {position:fixed; bottom:0; right:0; background-color: black; border: 3px solid grey;}
+
+#Sidebar {position:fixed; bottom: 0; left:0; top:0; width: 100px; float:left; background-color: darkseagreen; visibility: hidden; text-shadow: none;}
+
+
+#NavigateToggle {position:fixed; left:0; top:0; width: 100px; float:left; background-color: black; color:white;}
+
+#NavigateToggle:hover {
+background-color: white; color: black;
+}
+#Sidebar:active {
+background-color: white; color: black;
+}
+
+ul {list-style-type: none; margin: 0; padding: 0;}
+
+  li a {display: block; width: 95px; text-align:center; border-right: 5px solid darkslategray; padding: 3px 0px 3px 0px; text-size: 1.3em;}
+
+li a:hover {background-color: seagreen; color: white; font-weight: normal; border-right: 5px solid dimgray}
+
+li a:active {background-color: white; color: green;}
+
+#SidebarTop{background-color: darkslategray; display: block; border-right: 5px solid darkseagreen}
+
+input[type=text] {width: 150px; box-sizing: border-box; padding: 10px 10px; border: 5px inset seagreen; outline: 5px outset seagreen; transition: width 0.4s ease-in-out; border-radius: 2px;}
+
+input[type=text]:focus {padding: 10px 10px; border: 5px inset darkseagreen; outline: 5px outset darkseagreen; width: 100%;}
+
+input[type=text]:hover {padding: 10px 10px; border: 5px inset mediumseagreen; outline: 5px outset mediumseagreen;}
+
+input[type=button] {background-color:seagreen; color:white; cursor:copy; border: 4px outset darkslategray;}
+
+input[type=button]:active {background-color:seagreen; color:white; cursor:copy; border: 4px inset darkslategray}
+
+
+</style>
+</head>
+<body>
+<a href="/terranomisma" id="head"> Terranomisma </a></h1>
+
+<!-- Little advertisment in corner -->
+
+<div id="cornerstone"> Made by Teo Rivera </div>
+
+<!-- Sidebar -->
+
+<ul id=Sidebar onclick=NavigateToggle()> <span id="SidebarTop"> Table Of Contents </span>
+<li><a href="test">test</a></li> <li><a href="test2">test</a></li> <li><a href="test3">test</a></li>
+</ul>
+
+<!-- Sidebar Button -->
+
+<button id="NavigateToggle" onclick=TechScan()> Navigation </button>
+
+<h2 style="color: white; font-family:Tahoma, sans-serif">- For you, for the Earth</h2>
+<p>In today's world, we each face two giant challenges. One of them revolves around the one thing you always can have more of: money.</p>
+<p>The second one is a slower, yet ever growing problem: climate change.<br />Climate change is all around us and harms our planet more and more every day, and money pays for everything but &ldquo;everything&rdquo; keeps costing more money. According to the <a href="https://www.who.int/health-topics/air-pollution#tab=tab_2">WHO</a>, seven <span style="font-style:oblique">million</span> premature deaths each year are caused by air pollution, and those of you who are looking into the house market don't need a source to know that prices are out of control.</p>
+<hr />
+  <h2 id=fix> What if we could fix both of these problems?</h2>
+<p id=postintro> Welcome to Terranomisma, your one-stop research station for technologies to improve your life and your wallet while also helping the environment. Get started by entering an amount of money you are willing to spend and the amount of time you are willing to wait before you make back your money, press "Find Technologies", and Terranomisma will take it from there. All figures are estimates and are unofficial. Click on pictures of technologies to go to websites we used to learn about them and you can, too. Our current database includes technologies such as rooftop solar panels, blown-in cellulose insulation, heat pumps, double-paned windows, and more. Get your start into a greener future with Terranomisma. Terranomisma: for You, for the Planet.
+</p>
+<form>
+<label for=moneyspend> Maximum spending money:</label><br><br>
+<input type="text" id="moneyspend" placeholder="Enter a number..."><br>
+<label for=moneytime><br> Maximum time to make money back:</label><br><br>
+<input type="text" id="moneytime" placeholder="Enter a number..."><br><br>
+<input type="button" value="Find Technologies" onclick="TechScan()">
+</form>
+<p> Technologies:</p>
+<div class = "gallery" id="solar">
+  <a target="_blank" href="https://www.energy.gov/eere/solar/homeowners-guide-going-solar">
+    <img src="https://images.unsplash.com/photo-1655300256486-4ec7251bf84e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29sYXIlMjBwYW5lbCUyMHJvb2Z0b3B8ZW58MHx8MHx8fDA%3D" width = "600" height = "400">
+  </a>
+  <div class="desc"> Rooftop Solar panels; ~$12,700 cost, ~9 years return rate </div>
+</div>
+<div class = "gallery" id="BIC">
+  <a target="_blank" href="https://cellulose.org/insulation-savings-calculator/">
+    <img src="https://media.istockphoto.com/id/1411460115/photo/close-shot-of-eco-friendly-cellulose-insulation-filling-held-in-hand.webp?a=1&b=1&s=612x612&w=0&k=20&c=C1lIS2slnkTE7hApXUIcwD8-o9FCzWOZBEZuBd5f6mM=" width = "600" height = "400">
+  </a>
+  <div class="desc"> Blown-In Cellulose insulation; ~$2500 cost, ~5 years return rate </div>
+</div>
+<div class = "gallery" id="HP">
+  <a target="_blank" href="https://www.energy.gov/eere/solar/homeowners-guide-going-solar">
+    <img src="https://aircondlounge.com/wp-content/uploads/2022/10/What-Does-a-Heat-Pump-Look-Like-with-Photos-.jpg" width = "600" height = "400">
+  </a>
+  <div class="desc"> Whole-House Heat Pumps; ~$9,000 cost, ~22 years return rate </div>
+</div>
+<div class = "gallery" id="IW">
+  <a target="_blank" href="https://greenyplace.com/how-much-energy-do-double-pane-windows-save">
+    <img src="https://images.unsplash.com/photo-1629712803507-cdf200278157?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZG91YmxlJTIwcGFuZSUyMGluc3VsYXRlZCUyMHdpbmRvd3xlbnwwfHwwfHx8MA%3D%3D" width = "600" height = "400">
+  </a>
+  <div class="desc"> Insulated Double-Pane Windows; ~$1,500 cost, ~7 years return rate </div>
+</div>
+<div class = "gallery" id="GR">
+  <a target="_blank" href="https://ucrc.asu.edu/green-roof-energy-calculator">
+    <img src="https://images.unsplash.com/photo-1527159756486-3ba8f1ee1aa3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z3JlZW4lMjByb29mfGVufDB8fDB8fHww" width = "600" height = "400">
+  </a>
+  <div class="desc"> Green Roofs; ~20,000 cost, ~200 years return rate (Don't use unless you are starting a garden or using solar panels which benefit from these roofs) </div>
+</div>
+<!-- Scripts -->
+
+<!-- Navigation Show/Hide Script -->
+
+<script>
+function NavigateToggle() {
+var i = document.getElementById("Sidebar");
+    var t = document.getElementById("NavigateToggle");
+    if (i.style.visibility === "visible") {
+i.style.visibility = "hidden";
+            t.style.visibility = "visible";
+        } else {
+        i.style.visibility = "visible";
+            t.style.visibility = "hidden";
+        }
+}
+</script>
+
+<!-- Search engine Script -->
+
+<script>
+
+class EnvTech {
+constructor(cost, time, id) {
+    this.cost = cost;
+    this.time = time;
+    this.id = id;
+   }
+
+}
+
+/* Create List and Techs*/
+
+const Techs = [];
+/* Note to self: here is the template for tech creation:
+
+const exampletech = new EnvTech(x, y)
+Techs[x] = exampletech */
+
+const RooftopSolar = new EnvTech(12700, 9, "solar")
+Techs[0] = RooftopSolar
+const BIC = new EnvTech(2500, 5, "BIC")
+Techs[1] = BIC
+const WHHP = new EnvTech(9000, 22, "HP")
+Techs[2] = WHHP
+const IW = new EnvTech(1500, 7, "IW")
+Techs[3] = IW
+const GR = new EnvTech(20000, 200, "GR")
+Techs[4] = GR
+
+function TechScan() {
+  let MaxMon = Number(document.getElementById("moneyspend").value); /* GAH! HTML Devs just had to make inputs use .value, not .textcontent just to annoy me and take an hour of bugfixing it seems...*/  let MaxTim = Number(document.getElementById("moneytime").value);
+  const UnAcceptableTechs = [];
+  for (let i = 0; i < Techs.length; i++){
+  let x = document.getElementById(Techs[i].id);
+  x.style.display = "block";
+  }
+  for (let i = 0; i < Techs.length; i++){
+    let Mon = Techs[i].cost;
+    let Tim = Techs[i].time;
+    if (Mon >= MaxMon || Tim >= MaxTim) {
+    UnAcceptableTechs[UnAcceptableTechs.length] = Techs[i];
+        }
+
+        
+      }
+  for (let i = 0; i < UnAcceptableTechs.length; i++) {
+    let x = document.getElementById(UnAcceptableTechs[i].id);
+    x.style.display = "none";
+  
+  }
+}
+</script>
+</body>
